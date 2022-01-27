@@ -18,7 +18,7 @@ const NavigationBar = () => {
               </Nav.Link>
             </>
           )}
-          <Nav.Link href={`/${sessionStorage.getItem("username") ? "logout" : "login"}`} className="text-white" style={{ cursor: "pointer" }}>
+          <Nav.Link href={`/${sessionStorage.getItem("username") ? "" : "Login"}`} className="text-white" style={{ cursor: "pointer" }}>
             {sessionStorage.getItem("username") ? "Logout" : "Login"}
           </Nav.Link>
           <Navbar.Toggle />
